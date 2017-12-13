@@ -30,6 +30,8 @@ import org.sonar.plugins.python.pylint.PylintImportSensor;
 import org.sonar.plugins.python.pylint.PylintRuleRepository;
 import org.sonar.plugins.python.pylint.PylintSensor;
 import org.sonar.plugins.python.xunit.PythonXUnitSensor;
+import org.sonar.plugins.python.YYYSensor;
+import org.sonar.plugins.python.YYYRuleRepository;
 
 public class PythonPlugin implements Plugin {
 
@@ -138,6 +140,16 @@ public class PythonPlugin implements Plugin {
         .defaultValue("")
         .build(),
 
+      //YYY
+      PropertyDefinition.builder(YYYSensor.REPORT_PATH_KEY)
+        .name("YYY's reports")
+        .description("Path to YYY's report file, relative to projects root")
+        .category(PYTHON_CATEGORY)
+        .subCategory("YYY")
+        .onQualifiers(Qualifiers.PROJECT)
+        .defaultValue("")
+        .build(),
+
       Python.class,
       PythonCpdMapping.class,
 
@@ -150,6 +162,9 @@ public class PythonPlugin implements Plugin {
       PylintSensor.class,
       PylintImportSensor.class,
       PylintRuleRepository.class,
+
+      YYYSensor.class,
+      YYYRuleRepository.class,
 
       PythonXUnitSensor.class);
   }

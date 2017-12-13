@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+  <rule>
+    <key>yyy_1</key>
+    <name><![CDATA[A dummy rule]]></name>
+    <configKey>yyy_1</configKey>
+    <description>
+      <![CDATA[... dummy rule ...
+               <p>Long descrition of the dummy rule</p>
+      ]]>
+    </description>
+    <priority>MINOR</priority>
+  </rule>
+</rules>

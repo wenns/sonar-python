@@ -726,4 +726,11 @@
     <key>E1206</key>
     <priority>MAJOR</priority>
   </rule>
+
+  <rule>
+    <repositoryKey>YYY</repositoryKey>
+    <key>yyy_1</key>
+    <priority>MAJOR</priority>
+  </rule>
+
 </profile>
