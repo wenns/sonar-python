@@ -85,7 +85,8 @@ public final class CheckList {
         AfterJumpStatementCheck.class,
         IdenticalExpressionOnBinaryOperatorCheck.class,
         SelfAssignmentCheck.class,
-        MethodShouldBeStaticCheck.class
+        MethodShouldBeStaticCheck.class,
+        XXXCheck.class
     );
   }
 
